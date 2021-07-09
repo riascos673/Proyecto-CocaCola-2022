@@ -85,10 +85,14 @@ header .container nav a
 
 .container
 {
-    width: 1140px;
+    width: auto;
+    max-width: auto;
     margin: 0 auto 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    display: flex;
+    flex-wrap:wrap;
+
 }
 
 .row
@@ -103,11 +107,13 @@ header .container nav a
 {
     padding-right: 25px;
     padding-left: 25px;
+    display: flex;
 }
 
-.columna-33
-{
-    width: 33.33%;
+@media screen and (min-width:8000px){
+    .container .columna-columna-33{
+          width: 50%;
+    }
 }
 
 #inicio
